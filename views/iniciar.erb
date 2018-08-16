@@ -5,14 +5,25 @@
 <br>
 
 <div align=center>
-<form method=post action="Iniciar" id="Juego">
+
+<table>
+<tr>
+<%('A'..'Z').each do |letra| %>
+<td>
+<form method=post action="http://localhost:4567/Iniciar/<%=letra%>" id="Form<%=letra%>">
 <div align=center>
-<input type=submit id="A" value="A"/>
+<input type=submit id="<%=letra%>" value="<%=letra%>"/>
 </div>
 </form>
-<div algin=center>
+</td>
+<% end %>
+</tr>
+</table>
+
+<div align=center>
 <%= @mensaje %>
 </div>
 </div>
+
 </body>
 </html>

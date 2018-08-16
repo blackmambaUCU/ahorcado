@@ -11,4 +11,6 @@ Then veo boton "Iniciar"
 Scenario: Jugando
 Given en pantalla de juego
 When selecciono letra "A"
-Then confirmar seleccion letra "A" 
+Then confirmar seleccion letra "A"
+
+
