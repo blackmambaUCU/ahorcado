@@ -13,4 +13,8 @@ Given en pantalla de juego
 When selecciono letra "A"
 Then confirmar seleccion letra "A"
 
+Scenario: Jugando
+When en pantalla de juego
+Then mostrar casilleros palabra CASABLANCA
+
 

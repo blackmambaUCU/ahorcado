@@ -27,4 +27,14 @@ Then(/^confirmar seleccion letra "(.*?)"$/) do |letra|
 	last_response.body.should =~ /Eligio la letra: #{letra}/m
 end
 
+Then(/^mostrar casilleros palabra CASABLANCA$/) do
+  	last_response.body.should =~ /_ _ _ _ _ _ _ _ _ _/m
+end
+
+
+Then(/^mostrar casilleros palabra$/) do
+	last_response.body.should =~ /_ _ _ _ _ _ _ _ _ _/m
+end
+
+
 
