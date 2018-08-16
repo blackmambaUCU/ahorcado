@@ -21,11 +21,10 @@ end
 
 When(/^selecciono letra "(.*?)"$/) do |letra|
 	click_button(letra)
-	last_response.body.should =~ /#{letra}/m
 end
 
-Then(/^confirmar seleccion letra "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then(/^confirmar seleccion letra "(.*?)"$/) do |letra|
+	last_response.body.should =~ /#{letra}/m
 end
 
 
